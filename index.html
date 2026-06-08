@@ -200,6 +200,27 @@
             }
         }
         @media (max-width: 767px) {
+            .hero-title {
+                font-size: 2.85rem;
+                line-height: 1.02;
+            }
+            .hero-copy {
+                font-size: 1rem;
+                line-height: 1.65;
+            }
+            .hero-actions {
+                width: 100%;
+            }
+            .hero-actions > * {
+                width: 100%;
+            }
+            .section-title-mobile {
+                font-size: 1.95rem;
+                line-height: 1.08;
+            }
+            .section-subtitle-mobile {
+                font-size: 0.95rem;
+            }
             .trust-slider {
                 animation-duration: 24s;
             }
@@ -237,11 +258,53 @@
                 padding: 1rem;
             }
             .package-large-title {
-                font-size: 1.2rem;
+                font-size: 1.35rem;
+                line-height: 1.15;
             }
             .package-section {
                 padding-top: 56px;
                 padding-bottom: 56px;
+            }
+            .package-large-card p,
+            .package-large-card .text-label-caps {
+                font-size: 0.95rem;
+            }
+            .package-large-card .text-xl {
+                font-size: 1.4rem;
+            }
+            .package-large-card .text-xs {
+                font-size: 0.78rem;
+            }
+            .consult-strip-title {
+                font-size: 1.2rem;
+                line-height: 1.3;
+            }
+            .sewa-banner {
+                height: auto;
+                min-height: 0;
+            }
+            .sewa-banner-content {
+                padding: 1.25rem;
+            }
+            .sewa-banner-title {
+                font-size: 1.8rem;
+                line-height: 1.1;
+            }
+            .sewa-banner-copy {
+                font-size: 1rem;
+                line-height: 1.6;
+                margin-bottom: 1rem;
+            }
+            .sewa-banner-actions {
+                gap: 0.75rem;
+            }
+            .sewa-banner-actions > * {
+                width: 100%;
+                justify-content: center;
+            }
+            .section-heading-mobile {
+                font-size: 2rem;
+                line-height: 1.1;
             }
         }
         .custom-shadow {
@@ -294,14 +357,14 @@
 </div>
 <div class="relative max-w-container-max mx-auto px-grid-margin w-full grid md:grid-cols-2 gap-gutter items-center">
 <div class="text-white space-y-4 md:space-y-6 max-w-xl">
-<h2 class="font-h1-desktop text-[2.4rem] leading-[1.08] md:text-h1-desktop md:leading-tight">
+<h2 class="hero-title font-h1-desktop text-[2.4rem] leading-[1.08] md:text-h1-desktop md:leading-tight">
                     Partner Perjalanan <br/>
 <span class="text-secondary-container">Wisata Anda di Lampung.</span>
 </h2>
-<p class="text-base md:text-lg opacity-90 max-w-lg font-body-md">
+<p class="hero-copy text-base md:text-lg opacity-90 max-w-lg font-body-md">
                     Spesialis Study Tour, Corporate Gathering, dan Outbound Profesional dengan armada bus terbaru dan pelayanan standar BUMN.
                 </p>
-<div class="flex gap-4">
+<div class="hero-actions flex gap-4">
 <button class="bg-secondary-container text-on-secondary-container px-6 md:px-8 py-3.5 md:py-4 rounded-lg font-button flex items-center gap-2 w-full sm:w-auto justify-center">
                         Lihat Katalog Wisata
                     </button>
@@ -381,7 +444,7 @@
 <!-- Consultation Strip -->
 <div class="bg-secondary-container py-6">
 <div class="max-w-container-max mx-auto px-grid-margin flex flex-col md:flex-row justify-between items-center gap-4">
-<h3 class="text-on-secondary-container font-h3-pro">Butuh Rencana Perjalanan Custom? Konsultasi Paket Wisata GRATIS!</h3>
+<h3 class="consult-strip-title text-on-secondary-container font-h3-pro">Butuh Rencana Perjalanan Custom? Konsultasi Paket Wisata GRATIS!</h3>
 <a class="bg-white text-secondary px-8 py-3 rounded-lg font-button flex items-center gap-2 shadow-sm" href="https://wa.me/6282180752131?text=Halo%20RI%20Wisata%2C%20saya%20tertarik%20dengan%20paket%20wisata.%20Mohon%20info%20lebih%20lanjut." target="_blank" aria-label="Konsultasi paket wisata via WhatsApp">
 <span class="material-symbols-outlined">call</span>
                 Hubungi Konsultan Kami
@@ -393,7 +456,7 @@
 <div class="flex justify-between items-end mb-10">
 <div>
 <span class="text-secondary font-bold text-label-caps">DESTINASI PILIHAN</span>
-<h2 class="font-h2-desktop text-h2-desktop text-primary mt-2">Paket Wisata Terpopuler</h2>
+<h2 class="section-heading-mobile font-h2-desktop text-h2-desktop text-primary mt-2">Paket Wisata Terpopuler</h2>
 </div>
 <a class="text-secondary font-bold flex items-center gap-1 hover:underline" href="#">
                 Lihat Semua Paket <span class="material-symbols-outlined">trending_flat</span>
@@ -463,7 +526,7 @@
 <!-- Categories -->
 <section class="py-section-padding-y bg-surface-container-lowest">
 <div class="max-w-container-max mx-auto px-grid-margin">
-<h2 class="text-center font-h2-desktop text-h2-desktop text-primary mb-12">Layanan Spesialis Kami</h2>
+<h2 class="section-heading-mobile text-center font-h2-desktop text-h2-desktop text-primary mb-12">Layanan Spesialis Kami</h2>
 <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-8">
 <!-- Cat item -->
 <div class="flex flex-col items-center gap-3 group cursor-pointer">
@@ -522,7 +585,7 @@
 <div class="max-w-container-max mx-auto px-grid-margin">
 <div class="text-center mb-12">
 <span class="text-secondary-container font-bold text-label-caps tracking-widest">DOKUMENTASI</span>
-<h2 class="font-h2-desktop text-h2-desktop mt-2">Perjalanan Terbaru Kami</h2>
+<h2 class="section-heading-mobile font-h2-desktop text-h2-desktop mt-2">Perjalanan Terbaru Kami</h2>
 <p class="opacity-70 mt-4 max-w-2xl mx-auto">Momen kebahagiaan para pelanggan setia RI WISATA dari berbagai instansi dan sekolah di Lampung.</p>
 </div>
 <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
@@ -550,7 +613,7 @@
 <!-- Testimonials -->
 <section class="py-section-padding-y scroll-mt-24" id="tentang">
 <div class="max-w-container-max mx-auto px-grid-margin">
-<h2 class="text-center font-h2-desktop text-h2-desktop text-primary mb-12">Apa Kata Mereka?</h2>
+<h2 class="section-heading-mobile text-center font-h2-desktop text-h2-desktop text-primary mb-12">Apa Kata Mereka?</h2>
 <div class="testimonials-track grid md:grid-cols-3 gap-gutter">
 <!-- Testi 1 -->
 <div class="testimonials-card bg-white p-8 border border-outline-variant rounded-xl custom-shadow">
@@ -611,12 +674,12 @@
 </section>
 <!-- Sewa Bus Banner -->
 <section class="max-w-container-max mx-auto px-grid-margin mb-section-padding-y scroll-mt-24" id="sewa-bus">
-<div class="relative rounded-xl overflow-hidden bg-primary h-[350px] flex items-center">
+<div class="sewa-banner relative rounded-xl overflow-hidden bg-primary h-[350px] flex items-center">
 <img alt="Interior bus pariwisata RI Wisata" class="absolute inset-0 w-full h-full object-cover opacity-40" loading="lazy" src="docx_media/image16.jpeg"/>
-<div class="relative p-12 text-white max-w-2xl">
-<h2 class="font-h2-desktop text-h2-desktop mb-4">Butuh Sewa Bus Saja?</h2>
-<p class="text-lg opacity-90 mb-8">Pilih armada sesuai kebutuhan Anda. Kami menyediakan Sewa Big Bus (45-50 seat), Medium Bus (31-33 seat), atau Toyota HiAce (14 seat).</p>
-<div class="flex flex-col md:flex-row gap-6 items-start md:items-center">
+<div class="sewa-banner-content relative p-12 text-white max-w-2xl">
+<h2 class="sewa-banner-title font-h2-desktop text-h2-desktop mb-4">Butuh Sewa Bus Saja?</h2>
+<p class="sewa-banner-copy text-lg opacity-90 mb-8">Pilih armada sesuai kebutuhan Anda. Kami menyediakan Sewa Big Bus (45-50 seat), Medium Bus (31-33 seat), atau Toyota HiAce (14 seat).</p>
+<div class="sewa-banner-actions flex flex-col md:flex-row gap-6 items-start md:items-center">
 <a class="bg-secondary-container text-on-secondary-container px-8 py-4 rounded-lg font-button flex items-center gap-2" href="tel:+6282180752131">
 <span class="material-symbols-outlined">phone_in_talk</span>
                         0821-8075-2131
