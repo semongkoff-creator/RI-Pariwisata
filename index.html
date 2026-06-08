@@ -214,6 +214,35 @@
             .trust-card img {
                 height: 24px;
             }
+            .testimonials-track {
+                display: flex;
+                overflow-x: auto;
+                scroll-snap-type: x proximity;
+                gap: 1rem;
+                padding-bottom: 0.25rem;
+                -webkit-overflow-scrolling: touch;
+                scrollbar-width: none;
+            }
+            .testimonials-track::-webkit-scrollbar {
+                display: none;
+            }
+            .testimonials-track > .testimonials-card {
+                flex: 0 0 86%;
+                scroll-snap-align: start;
+            }
+            .package-media {
+                height: 260px;
+            }
+            .package-large-card .package-body {
+                padding: 1rem;
+            }
+            .package-large-title {
+                font-size: 1.2rem;
+            }
+            .package-section {
+                padding-top: 56px;
+                padding-bottom: 56px;
+            }
         }
         .custom-shadow {
             box-shadow: 0px 10px 15px -3px rgba(30, 58, 138, 0.08);
@@ -360,7 +389,7 @@
 </div>
 </div>
 <!-- Featured Packages -->
-<section class="py-section-padding-y max-w-container-max mx-auto px-grid-margin scroll-mt-24" id="paket-wisata">
+<section class="package-section py-section-padding-y max-w-container-max mx-auto px-grid-margin scroll-mt-24" id="paket-wisata">
 <div class="flex justify-between items-end mb-10">
 <div>
 <span class="text-secondary font-bold text-label-caps">DESTINASI PILIHAN</span>
@@ -372,15 +401,15 @@
 </div>
 <div class="grid md:grid-cols-12 gap-gutter">
 <!-- Large Card -->
-<div class="md:col-span-7 group cursor-pointer">
+<div class="md:col-span-7 group cursor-pointer package-large-card">
 <div class="bg-white border border-outline-variant rounded-xl overflow-hidden custom-shadow transition-transform hover:-translate-y-1">
-<div class="relative h-[400px]">
+<div class="relative h-[260px] sm:h-[400px] package-media">
 <img alt="Paket Lampung-Bandung 4D1N dengan Medium Bus" class="w-full h-full object-cover" loading="lazy" src="docx_media/image15.jpeg"/>
 <div class="absolute top-4 left-4 bg-secondary text-white px-4 py-1 rounded text-label-caps">BEST SELLER</div>
 </div>
-<div class="p-4 sm:p-6 flex flex-col sm:flex-row sm:justify-between sm:items-start gap-4">
+<div class="package-body p-4 sm:p-6 flex flex-col sm:flex-row sm:justify-between sm:items-start gap-4">
 <div class="min-w-0">
-<h3 class="text-h3-pro text-primary mb-2 text-[1.35rem] sm:text-h3-pro">Paket Study Tour Medium Bus</h3>
+<h3 class="package-large-title text-h3-pro text-primary mb-2 text-[1.35rem] sm:text-h3-pro">Paket Study Tour Medium Bus</h3>
 <p class="text-on-surface-variant flex items-start gap-2 text-sm sm:text-base leading-snug">
 <span class="material-symbols-outlined text-secondary">location_on</span>
                                 Lampung → Bandung (3 Hari 2 Malam)
@@ -522,9 +551,9 @@
 <section class="py-section-padding-y scroll-mt-24" id="tentang">
 <div class="max-w-container-max mx-auto px-grid-margin">
 <h2 class="text-center font-h2-desktop text-h2-desktop text-primary mb-12">Apa Kata Mereka?</h2>
-<div class="grid md:grid-cols-3 gap-gutter">
+<div class="testimonials-track grid md:grid-cols-3 gap-gutter">
 <!-- Testi 1 -->
-<div class="bg-white p-8 border border-outline-variant rounded-xl custom-shadow">
+<div class="testimonials-card bg-white p-8 border border-outline-variant rounded-xl custom-shadow">
 <div class="flex gap-1 mb-4 text-secondary-container">
 <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
 <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
@@ -542,7 +571,7 @@
 </div>
 </div>
 <!-- Testi 2 -->
-<div class="bg-white p-8 border border-outline-variant rounded-xl custom-shadow">
+<div class="testimonials-card bg-white p-8 border border-outline-variant rounded-xl custom-shadow">
 <div class="flex gap-1 mb-4 text-secondary-container">
 <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
 <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
@@ -560,7 +589,7 @@
 </div>
 </div>
 <!-- Testi 3 -->
-<div class="bg-white p-8 border border-outline-variant rounded-xl custom-shadow">
+<div class="testimonials-card bg-white p-8 border border-outline-variant rounded-xl custom-shadow">
 <div class="flex gap-1 mb-4 text-secondary-container">
 <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
 <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
